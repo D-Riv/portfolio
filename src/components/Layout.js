@@ -17,7 +17,7 @@ const LayoutContent = styled.div`
 const Layout = (props) => {
   return (
     <LayoutContainer>
-      <LayoutContent>
+      <LayoutContent style={props.styles}>
         <Header title={props.title} description={props.description} />
         {props.children}
       </LayoutContent>

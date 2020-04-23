@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const NavbarWrapper = styled.nav`
@@ -29,7 +29,7 @@ const NavListItems = styled.li`
     transform: scale(1.3);
   }
 `;
-const NavLinks = styled(Link)`
+const NavLinks = styled(NavLink)`
   color: #ffffff;
   text-decoration: none;
 
