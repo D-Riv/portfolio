@@ -1,6 +1,10 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "../containers/Home";
+import About from "../containers/About";
+import Portfolio from "../containers/Portfolio";
+import Contact from "../containers/Contact";
 
 function App() {
   return (
