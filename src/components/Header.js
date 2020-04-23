@@ -1,5 +1,5 @@
 import React from "react";
-// import Navbar from "./navbar";
+import Navbar from "./navbar";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
@@ -26,7 +26,7 @@ const TitleDescription = styled.h3`
 const Header = (props) => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <HeaderWrapper>
         <HeaderTitle>{props.title}</HeaderTitle>
         <TitleDescription>{props.description}</TitleDescription>
