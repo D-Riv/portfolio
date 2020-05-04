@@ -19,7 +19,7 @@ const FooterUl = styled.ul`
 const FooterLi = styled.li`
   font-size: 30px;
   cursor: pointer;
-  margin: 10px 20px;
+  margin: 1px 20px;
   list-style: none;
   transition: transform 0.2s;
 
@@ -31,7 +31,7 @@ const FooterLi = styled.li`
 const FooterText = styled.h3`
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 0.8rem;
   color: #575757;
 `;
 

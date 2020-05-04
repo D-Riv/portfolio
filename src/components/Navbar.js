@@ -14,11 +14,23 @@ const NavbarWrapper = styled.nav`
   left: 0;
   max-height: 300px;
   padding: 0 6rem;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
 `;
 
 const NavList = styled.ul`
   display: flex;
   justify-content: space-evenly;
+
+  @media (max-width: 500px) {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 const NavListItems = styled.li`
   list-style: none;
@@ -27,6 +39,13 @@ const NavListItems = styled.li`
 
   :hover {
     transform: scale(1.3);
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 0;
   }
 `;
 const NavLinks = styled(NavLink)`
@@ -64,6 +83,28 @@ const NavTitleLink = styled(Link)`
   }
 `;
 
+const ToggleButton = styled.a`
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+
+  @media (max-width: 500px) {
+    display: flex;
+  }
+`;
+
+const ToggleBar = styled.span`
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+`;
+
 const Navbar = () => {
   return (
     <NavbarWrapper>
@@ -72,6 +113,11 @@ const Navbar = () => {
           dennisrivera.io
         </NavTitleLink>
       </NavTitle>
+      <ToggleButton href="#">
+        <ToggleBar></ToggleBar>
+        <ToggleBar></ToggleBar>
+        <ToggleBar></ToggleBar>
+      </ToggleButton>
       <NavList>
         <NavListItems>
           <NavLinks
