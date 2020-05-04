@@ -122,9 +122,9 @@ const Navbar = () => {
         <NavListItems>
           <NavLinks
             to="/"
-            activeStyle={{
-              color: "#468499",
-            }}
+            // activeStyle={{
+            //   color: "#468499",
+            // }}
           >
             Home
           </NavLinks>
