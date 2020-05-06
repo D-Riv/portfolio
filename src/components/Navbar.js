@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
+import Resume from "../utils/Dennis Rivera Res.pdf";
 
 const NavbarWrapper = styled.nav`
   color: #ffffff;
@@ -150,10 +151,7 @@ const Navbar = () => {
           </NavLinks>
         </NavListItems>
         <NavListItems>
-          <ResumeLink
-            href="https://docs.google.com/document/d/1yXqWcnEyHx_3yN-J7mRfOX6sUcd1Tv7SXxA5x10NOsg/edit?usp=sharing"
-            target="_blank"
-          >
+          <ResumeLink href={Resume} target="_blank">
             Resume
           </ResumeLink>
         </NavListItems>

@@ -28,3 +28,25 @@
   font-size: 30rem;
   color: #468499;
 }
+.fa-html5 {
+  color: #15aabf;
+  font-size: 50px;
+}
+.fa-css3-alt {
+  color: orange;
+  font-size: 50px;
+}
+.fa-js {
+  color: #dddf04;
+  font-size: 50px;
+  background-color: #000000;
+  background-position: bottom right;
+  margin: 0 1rem;
+}
+.fa-react {
+  color: #58c0f9;
+  font-size: 50px;
+}
+.fa-node {
+  font-size: 50px;
+}

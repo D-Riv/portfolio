@@ -2,8 +2,12 @@ import React from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 
+const AboutSummaryWrapper = styled.div`
+  margin-top: 8rem;
+`;
+
 const AboutSummaryContainer = styled.div`
-  margin: 100px 150px 100px 150px;
+  margin: 100px 170px 100px 170px;
 `;
 
 const AboutSummary = styled.p`
@@ -38,23 +42,41 @@ const SkillList = styled.ul`
 
 const SkillListItem = styled.li`
   font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+`;
+
+const SkillDescription = styled.h3`
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #575757;
+`;
+
+const SkillListItemImage = styled.li`
+  // padding-top: 1rem;
 `;
 
 const SkillListItemCustom = styled.li`
   font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
   color: #a3a3a3;
-  padding-top: 10px;
+  padding: 10px 0;
 `;
 
 const SkillListItemCustom2 = styled.li`
   font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #004f11;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 5px;
 `;
 
 const About = () => {
   return (
     <Layout title="About Me" description="Learn About Who I Am">
-      <div className="about-main-wrapper">
+      <AboutSummaryWrapper>
         <AboutSummaryContainer>
           <AboutSummary>
             Hi, it's nice to meet you! I'm Dennis, I am a passionate,
@@ -88,49 +110,78 @@ const About = () => {
           <SkillList>
             <SkillListItem>
               <i class="fab fa-html5"></i>
+              <div>
+                <SkillDescription>HTML5</SkillDescription>
+              </div>
             </SkillListItem>
             <SkillListItem>
               <i class="fab fa-css3-alt"></i>
+              <div>
+                <SkillDescription>CSS3</SkillDescription>
+              </div>
             </SkillListItem>
             <SkillListItem>
               <i class="fab fa-js"></i>
+              <div>
+                <SkillDescription>JavaScript</SkillDescription>
+              </div>
             </SkillListItem>
             <SkillListItem>
               <i class="fab fa-react"></i>
+              <div>
+                <SkillDescription>React</SkillDescription>
+              </div>
             </SkillListItem>
             <SkillListItem>
               <i class="fab fa-node"></i>
+              <div>
+                <SkillDescription>NodeJS</SkillDescription>
+              </div>
             </SkillListItem>
-            <SkillListItem>
-              {/* <img
-                className="mongodb-logo"
-                src={MongoDB}
-                alt="mongodb-logo"
+            <SkillListItemImage>
+              <img
+                src="https://i.imgur.com/cR1JtfH.jpg"
+                title="source: imgur.com"
                 width="100"
                 height="50"
-              /> */}
-            </SkillListItem>
-            <SkillListItemCustom>
-              <p className="express">Express</p>
-            </SkillListItemCustom>
+              />
+              <div>
+                <SkillDescription>MongoDB</SkillDescription>
+              </div>
+            </SkillListItemImage>
+            <li>
+              <SkillListItemCustom>Express</SkillListItemCustom>
+              <div>
+                <SkillDescription>Express</SkillDescription>
+              </div>
+            </li>
             <SkillListItem>
               <i class="fab fa-python"></i>
+              <div>
+                <SkillDescription>Python</SkillDescription>
+              </div>
             </SkillListItem>
-            <SkillListItemCustom2>
-              <p className="django">Django</p>
-            </SkillListItemCustom2>
+            <li>
+              <SkillListItemCustom2>Django</SkillListItemCustom2>
+              <div>
+                <SkillDescription>Django</SkillDescription>
+              </div>
+            </li>
             <SkillListItem>
-              {/* <img
+              <img
                 className="postgresql-logo"
-                src={Postgresql}
+                src="https://i.imgur.com/VjFXXFu.jpg"
                 alt="postgresql-logo"
                 width="120"
-                height="100"
-              /> */}
+                height="50"
+              />
+              <div>
+                <SkillDescription>PostgreSQL</SkillDescription>
+              </div>
             </SkillListItem>
           </SkillList>
         </Skills>
-      </div>
+      </AboutSummaryWrapper>
     </Layout>
   );
 };
