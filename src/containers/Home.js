@@ -39,6 +39,7 @@ const BackgroundImage = styled.div`
   top: 10rem;
   right: 10rem;
 `;
+
 const Home = () => {
   return (
     <Layout styles={StyledLayout}>

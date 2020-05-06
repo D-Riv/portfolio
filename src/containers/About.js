@@ -48,7 +48,7 @@ const SkillListItem = styled.li`
 
 const SkillDescription = styled.h3`
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 1rem 0;
   color: #575757;
 `;
