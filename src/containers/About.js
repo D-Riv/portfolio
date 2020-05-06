@@ -1,12 +1,62 @@
 import React from "react";
 import Layout from "../components/Layout";
+import styled from "styled-components";
+
+const AboutSummaryContainer = styled.div`
+  margin: 100px 150px 100px 150px;
+`;
+
+const AboutSummary = styled.p`
+  font-family: "Montserrat", sans-serif;
+  color: #575757;
+`;
+
+const Skills = styled.div`
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px;
+`;
+
+const SkillsTitle = styled.span`
+  font-size: 2.1rem;
+  font-weight: 500;
+`;
+
+const SkillsTitle2 = styled.span`
+  color: #ffffff;
+  background-color: #468499;
+  padding: 0 1rem;
+`;
+
+const SkillList = styled.ul`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  list-style: none;
+`;
+
+const SkillListItem = styled.li`
+  font-size: 3rem;
+`;
+
+const SkillListItemCustom = styled.li`
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #a3a3a3;
+  padding-top: 10px;
+`;
+
+const SkillListItemCustom2 = styled.li`
+  font-size: 1.5rem;
+`;
 
 const About = () => {
   return (
     <Layout title="About Me" description="Learn About Who I Am">
       <div className="about-main-wrapper">
-        <div className="about-summary-container">
-          <p className="aboutme">
+        <AboutSummaryContainer>
+          <AboutSummary>
             Hi, it's nice to meet you! I'm Dennis, I am a passionate,
             purpose-driven Software developer. I have a military background in
             the United States Marine Corps where I served for 4-year as a
@@ -28,31 +78,30 @@ const About = () => {
             no better feeling then being able to create and watch your ideas
             come to life. I will continue to push myself to learn more and be
             more.
-          </p>
-        </div>
-        <div className="skills">
-          <h1>
-            My Current{" "}
-            <span className="skills-title">Languages, Frameworks,</span> and{" "}
-            <span className="skills-title">Libraries</span>
-          </h1>
-          <ul className="skill-list">
-            <li>
+          </AboutSummary>
+        </AboutSummaryContainer>
+        <Skills>
+          <SkillsTitle>
+            My Current <SkillsTitle2>Languages, Frameworks,</SkillsTitle2> and{" "}
+            <SkillsTitle2>Libraries</SkillsTitle2>
+          </SkillsTitle>
+          <SkillList>
+            <SkillListItem>
               <i class="fab fa-html5"></i>
-            </li>
-            <li>
+            </SkillListItem>
+            <SkillListItem>
               <i class="fab fa-css3-alt"></i>
-            </li>
-            <li>
+            </SkillListItem>
+            <SkillListItem>
               <i class="fab fa-js"></i>
-            </li>
-            <li>
+            </SkillListItem>
+            <SkillListItem>
               <i class="fab fa-react"></i>
-            </li>
-            <li>
+            </SkillListItem>
+            <SkillListItem>
               <i class="fab fa-node"></i>
-            </li>
-            <li>
+            </SkillListItem>
+            <SkillListItem>
               {/* <img
                 className="mongodb-logo"
                 src={MongoDB}
@@ -60,17 +109,17 @@ const About = () => {
                 width="100"
                 height="50"
               /> */}
-            </li>
-            <li>
+            </SkillListItem>
+            <SkillListItemCustom>
               <p className="express">Express</p>
-            </li>
-            <li>
+            </SkillListItemCustom>
+            <SkillListItem>
               <i class="fab fa-python"></i>
-            </li>
-            <li>
+            </SkillListItem>
+            <SkillListItemCustom2>
               <p className="django">Django</p>
-            </li>
-            <li>
+            </SkillListItemCustom2>
+            <SkillListItem>
               {/* <img
                 className="postgresql-logo"
                 src={Postgresql}
@@ -78,9 +127,9 @@ const About = () => {
                 width="120"
                 height="100"
               /> */}
-            </li>
-          </ul>
-        </div>
+            </SkillListItem>
+          </SkillList>
+        </Skills>
       </div>
     </Layout>
   );

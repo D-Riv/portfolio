@@ -53,19 +53,6 @@ const Footer = () => {
               <i class="fab fa-linkedin"></i>
             </a>
           </FooterLi>
-          <FooterLi className="footer-li">
-            <a href="https://www.instagram.com/d.rivs/?hl=en" target="_blank">
-              <i class="fab fa-instagram-square"></i>
-            </a>
-          </FooterLi>
-          <FooterLi className="footer-li">
-            <a
-              href="https://www.facebook.com/dennis.rivera.988926"
-              target="_blank"
-            >
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </FooterLi>
         </FooterUl>
 
         <FooterText>
