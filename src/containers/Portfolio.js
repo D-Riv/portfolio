@@ -57,6 +57,10 @@ const ButtonLinks = styled.button`
   cursor: pointer;
   transition: transform 0.2s;
 
+  :focus {
+    outline: none;
+  }
+
   :hover {
     transform: scale(1.1);
   }

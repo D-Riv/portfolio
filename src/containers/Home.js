@@ -33,6 +33,10 @@ const ButtonStyle = styled.button`
   padding: 15px 20px;
   cursor: pointer;
   transition: transform 0.2s;
+
+  :focus {
+    outline: none;
+  }
 `;
 const BackgroundImage = styled.div`
   position: absolute;
