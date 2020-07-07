@@ -105,7 +105,7 @@ const Portfolio = () => {
                   </ButtonLinks>
                 </a>
                 <a
-                  href="https://github.com/D-Riv/Project-1-Portfolio"
+                  href="https://github.com/D-Riv/tv-movie-library"
                   target="_blank"
                 >
                   <ButtonLinks>
