@@ -2,80 +2,80 @@ import React from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 
-const ProjectTitleContainer = styled.div`
-  text-align: center;
-`;
+// const div = styled.div`
+//   text-align: center;
+// `;
 
-const ProjectTitle = styled.h1`
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  background-color: #468499;
-  font-size: 30px;
-  // font-weight: 5rem;
-  text-align: center;
-  margin: 50px;
-  display: inline-block;
-`;
+// const h1 = styled.h1`
+//   font-family: "Roboto", sans-serif;
+//   color: #ffffff;
+//   background-color: #468499;
+//   font-size: 30px;
+//   // font-weight: 5rem;
+//   text-align: center;
+//   margin: 50px;
+//   display: inline-block;
+// `;
 
-const Projects = styled.div`
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 20px 100px 100px 100px;
-`;
+// const div = styled.div`
+//   font-family: "Roboto", sans-serif;
+//   display: flex;
+//   justify-content: center;
+//   text-align: center;
+//   margin: 20px 100px 100px 100px;
+// `;
 
-const ProjectImage = styled.img`
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-`;
+// const image = styled.img`
+//   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+// `;
 
-const ProjectDescription = styled.p`
-  color: #575757;
-  width: 500px;
-  text-align: left;
-  margin: 0 50px 0 50px;
-`;
+// const p = styled.p`
+//   color: #575757;
+//   width: 500px;
+//   text-align: left;
+//   margin: 0 50px 0 50px;
+// `;
 
-const ProjectSkills = styled.p`
-  color: #468499;
-  font-weight: bold;
-  padding: 10px;
-`;
+// const divkills = styled.p`
+//   color: #468499;
+//   font-weight: bold;
+//   padding: 10px;
+// `;
 
-const ButtonContainer = styled.p`
-  margin: 10px;
-`;
+// const ButtonContainer = styled.p`
+//   margin: 10px;
+// `;
 
-const ButtonLinks = styled.button`
-  font-size: 15px;
-  color: #ffffff;
-  background-color: #468499;
-  border: none;
-  border-radius: 30px;
-  margin: 10px;
-  padding: 15px 20px;
-  cursor: pointer;
-  transition: transform 0.2s;
+// const ButtonLinks = styled.button`
+//   font-size: 15px;
+//   color: #ffffff;
+//   background-color: #468499;
+//   border: none;
+//   border-radius: 30px;
+//   margin: 10px;
+//   padding: 15px 20px;
+//   cursor: pointer;
+//   transition: transform 0.2s;
 
-  :focus {
-    outline: none;
-  }
+//   :focus {
+//     outline: none;
+//   }
 
-  :hover {
-    transform: scale(1.1);
-  }
-`;
+//   :hover {
+//     transform: scale(1.1);
+//   }
+// `;
 
 const Portfolio = () => {
   return (
     <Layout title="Portfolio" description="Check Out Some of My Work">
       <div className="portfolio-main-wrapper">
         <div className="portfolio-main-container">
-          <ProjectTitleContainer>
-            <ProjectTitle>Tv-Movie Library</ProjectTitle>
-          </ProjectTitleContainer>
-          <Projects>
-            <ProjectImage
+          <div>
+            <h1>Tv-Movie Library</h1>
+          </div>
+          <div>
+            <image
               className="portfolio-images"
               src="https://i.imgur.com/0w0ViUU.png"
               alt="design of a portfolio"
@@ -83,7 +83,7 @@ const Portfolio = () => {
               height="250"
             />
             <div className="project-display">
-              <ProjectDescription>
+              <p>
                 This is a movie and tv show library built with React. The data
                 is fetched from the Tv-Movie API I built in the back end. Repo
                 for my api can be found below. Within the library you have the
@@ -94,73 +94,73 @@ const Portfolio = () => {
                 Overall the library contains full CRUD utilizing fetch request
                 to reach different endpoints. This was an exciting yet
                 challenging project to build.
-              </ProjectDescription>
-              <ProjectSkills>
+              </p>
+              <div>
                 HTML | CSS | JavaScript | React | Styled Components | BootStrap
-              </ProjectSkills>
-              <ButtonContainer>
+              </div>
+              <p>
                 <a href="https://tv-movie-library.netlify.app/" target="_blank">
-                  <ButtonLinks>
+                  <button>
                     <i class="fas fa-link"></i> VISIT
-                  </ButtonLinks>
+                  </button>
                 </a>
                 <a
                   href="https://github.com/D-Riv/tv-movie-library"
                   target="_blank"
                 >
-                  <ButtonLinks>
+                  <button>
                     <i class="fab fa-github"></i> SOURCE
-                  </ButtonLinks>
+                  </button>
                 </a>
-              </ButtonContainer>
+              </p>
             </div>
-          </Projects>
+          </div>
 
-          <ProjectTitleContainer>
-            <ProjectTitle>Hero Database</ProjectTitle>
-          </ProjectTitleContainer>
-          <Projects>
+          <div>
+            <h1>Hero Database</h1>
+          </div>
+          <div>
             <div className="project-display">
-              <ProjectDescription>
+              <p>
                 A simple super hero database that contains Marvel and DC
                 character data. This web app utilizes the modal ui pattern for
                 displaying super hero images and bio through JavaScript DOM
                 manipulation. The api utlized for this project is the SuperHero
                 api.
-              </ProjectDescription>
-              <ProjectSkills>HTML | CSS | JavaScript</ProjectSkills>
-              <ButtonContainer>
+              </p>
+              <div>HTML | CSS | JavaScript</div>
+              <p>
                 <a
                   href="https://ui-pattern-project.netlify.com/"
                   target="_blank"
                 >
-                  <ButtonLinks>
+                  <button>
                     <i class="fas fa-link"></i> VISIT
-                  </ButtonLinks>
+                  </button>
                 </a>
                 <a
                   href="https://github.com/D-Riv/Project-3-UI-Pattern"
                   target="_blank"
                 >
-                  <ButtonLinks>
+                  <button>
                     <i class="fab fa-github"></i> SOURCE
-                  </ButtonLinks>
+                  </button>
                 </a>
-              </ButtonContainer>
+              </p>
             </div>
-            <ProjectImage
+            <image
               className="hero-image"
               src="https://i.imgur.com/YiTt3Xd.png"
               alt="Hero database"
               width="500"
               height="250"
             />
-          </Projects>
-          <ProjectTitleContainer>
-            <ProjectTitle>Hangman</ProjectTitle>
-          </ProjectTitleContainer>
-          <Projects>
-            <ProjectImage
+          </div>
+          <div>
+            <h1>Hangman</h1>
+          </div>
+          <div>
+            <image
               className="portfolio-images"
               src="https://i.imgur.com/k25AaPC.png"
               alt="hangman game"
@@ -168,73 +168,73 @@ const Portfolio = () => {
               height="250"
             />
             <div className="project-display">
-              <ProjectDescription>
+              <p>
                 This is a project built from everything we have learned in unit
                 1 during my time at GA. A fully functional Hangman game that can
                 be played alone or with friends for entertainment. The game was
                 developed utilizing semantic markup, CSS animations/responsive
                 design, and DOM minipulation. The game is built around the
                 famously known game hangman.
-              </ProjectDescription>
-              <ProjectSkills>HTML | CSS | JavaScript</ProjectSkills>
-              <ButtonContainer>
+              </p>
+              <div>HTML | CSS | JavaScript</div>
+              <p>
                 <a
                   href="https://project-4-hangman.netlify.com/"
                   target="_blank"
                 >
-                  <ButtonLinks>
+                  <button>
                     <i class="fas fa-link"></i> VISIT
-                  </ButtonLinks>
+                  </button>
                 </a>
                 <a
                   href="https://github.com/D-Riv/Project-4-Hangman"
                   target="_blank"
                 >
-                  <ButtonLinks>
+                  <button>
                     <i class="fab fa-github"></i> SOURCE
-                  </ButtonLinks>
+                  </button>
                 </a>
-              </ButtonContainer>
+              </p>
             </div>
-          </Projects>
-          <ProjectTitleContainer>
-            <ProjectTitle>Tv-Movie API</ProjectTitle>
-          </ProjectTitleContainer>
-          <Projects>
+          </div>
+          <div>
+            <h1>Tv-Movie API</h1>
+          </div>
+          <div>
             <div className="project-display">
-              <ProjectDescription>
+              <p>
                 Designed a JSON API containing data on movies and tv shows. The
                 API contains complete CRUD functionality implemented with
                 RESTful routes.
-              </ProjectDescription>
-              <ProjectSkills>Node.JS | MongoDB | Express</ProjectSkills>
-              <ButtonContainer>
+              </p>
+              <divkills>Node.JS | MongoDB | Express</divkills>
+              <p>
                 <a href="https://tv-movie-api.herokuapp.com/" target="_blank">
-                  <ButtonLinks>
+                  <button>
                     <i class="fas fa-link"></i> VISIT
-                  </ButtonLinks>
+                  </button>
                 </a>
                 <a href="https://github.com/D-Riv/tv-movie-api" target="_blank">
-                  <ButtonLinks>
+                  <button>
                     <i class="fab fa-github"></i> SOURCE
-                  </ButtonLinks>
+                  </button>
                 </a>
-              </ButtonContainer>
+              </p>
             </div>
-            <ProjectImage
+            <image
               className="portfolio-images"
               src="https://i.imgur.com/9sxSFtl.png"
               alt="my portfolio"
               width="500"
               height="250"
             />
-          </Projects>
+          </div>
 
-          <ProjectTitleContainer>
-            <ProjectTitle>Mockup</ProjectTitle>
-          </ProjectTitleContainer>
-          <Projects>
-            <ProjectImage
+          <div>
+            <h1>Mockup</h1>
+          </div>
+          <div>
+            <image
               className="portfolio-images"
               src="https://i.imgur.com/h1amchM.png"
               alt="design of a portfolio"
@@ -242,34 +242,34 @@ const Portfolio = () => {
               height="250"
             />
             <div className="project-display">
-              <ProjectDescription>
+              <p>
                 This is a static web page project used to demonstrate my ability
                 to structure and design a web page based on a mock up provided
                 to me. This allowed me to emulate what is done on the job,
                 working with designers. The project is built around a personal
                 portfolio.
-              </ProjectDescription>
-              <ProjectSkills>HTML | CSS </ProjectSkills>
-              <ButtonContainer>
+              </p>
+              <divkills>HTML | CSS </divkills>
+              <p>
                 <a
                   href="https://project-1-portfolio.netlify.com/"
                   target="_blank"
                 >
-                  <ButtonLinks>
+                  <button>
                     <i class="fas fa-link"></i> VISIT
-                  </ButtonLinks>
+                  </button>
                 </a>
                 <a
                   href="https://github.com/D-Riv/Project-1-Portfolio"
                   target="_blank"
                 >
-                  <ButtonLinks>
+                  <button>
                     <i class="fab fa-github"></i> SOURCE
-                  </ButtonLinks>
+                  </button>
                 </a>
-              </ButtonContainer>
+              </p>
             </div>
-          </Projects>
+          </div>
         </div>
       </div>
     </Layout>
