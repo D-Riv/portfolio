@@ -2,83 +2,83 @@ import React from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 
-const AboutSummaryWrapper = styled.div`
-  margin-top: 8rem;
-`;
+// const AboutSummaryWrapper = styled.div`
+//   margin-top: 8rem;
+// `;
 
-const AboutSummaryContainer = styled.div`
-  margin: 100px 170px 100px 170px;
-`;
+// const AboutSummaryContainer = styled.div`
+//   margin: 100px 170px 100px 170px;
+// `;
 
-const AboutSummary = styled.p`
-  font-family: "Montserrat", sans-serif;
-  color: #575757;
-`;
+// const AboutSummary = styled.p`
+//   font-family: "Montserrat", sans-serif;
+//   color: #575757;
+// `;
 
-const Skills = styled.div`
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  margin: 20px;
-`;
+// const Skills = styled.div`
+//   font-family: "Roboto", sans-serif;
+//   text-align: center;
+//   margin: 20px;
+// `;
 
-const SkillsTitle = styled.span`
-  font-size: 2.1rem;
-  font-weight: 500;
-`;
+// const SkillsTitle = styled.span`
+//   font-size: 2.1rem;
+//   font-weight: 500;
+// `;
 
-const SkillsTitle2 = styled.span`
-  color: #ffffff;
-  background-color: #468499;
-  padding: 0 1rem;
-`;
+// const SkillsTitle2 = styled.span`
+//   color: #ffffff;
+//   background-color: #468499;
+//   padding: 0 1rem;
+// `;
 
-const SkillList = styled.ul`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 10px;
-  list-style: none;
-`;
+// const SkillList = styled.ul`
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   margin: 10px;
+//   list-style: none;
+// `;
 
-const SkillListItem = styled.li`
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-`;
+// const li = styled.li`
+//   font-size: 3rem;
+//   display: flex;
+//   flex-direction: column;
+// `;
 
-const SkillDescription = styled.h3`
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
-  margin: 1rem 0;
-  color: #575757;
-`;
+// const h3 = styled.h3`
+//   font-family: "Roboto", sans-serif;
+//   font-size: 0.8rem;
+//   margin: 1rem 0;
+//   color: #575757;
+// `;
 
-const SkillListItemImage = styled.li`
-  // padding-top: 1rem;
-`;
+// const liImage = styled.li`
+//   // padding-top: 1rem;
+// `;
 
-const SkillListItemCustom = styled.li`
-  font-size: 1.5rem;
-  font-family: "Raleway", sans-serif;
-  color: #a3a3a3;
-  padding: 10px 0;
-`;
+// const liCustom = styled.li`
+//   font-size: 1.5rem;
+//   font-family: "Raleway", sans-serif;
+//   color: #a3a3a3;
+//   padding: 10px 0;
+// `;
 
-const SkillListItemCustom2 = styled.li`
-  font-size: 1.5rem;
-  color: #ffffff;
-  background-color: #004f11;
-  border-radius: 10px;
-  margin-top: 5px;
-  padding: 5px;
-`;
+// const liCustom2 = styled.li`
+//   font-size: 1.5rem;
+//   color: #ffffff;
+//   background-color: #004f11;
+//   border-radius: 10px;
+//   margin-top: 5px;
+//   padding: 5px;
+// `;
 
 const About = () => {
   return (
     <Layout title="About Me" description="Learn About Who I Am">
-      <AboutSummaryWrapper>
-        <AboutSummaryContainer>
-          <AboutSummary>
+      <div>
+        <div>
+          <p>
             Hi, it's nice to meet you! I'm Dennis, I am a passionate,
             purpose-driven Software developer. I have a military background in
             the United States Marine Corps where I served for 4-year as a
@@ -100,45 +100,45 @@ const About = () => {
             no better feeling then being able to create and watch your ideas
             come to life. I will continue to push myself to learn more and be
             more.
-          </AboutSummary>
-        </AboutSummaryContainer>
-        <Skills>
-          <SkillsTitle>
-            My Current <SkillsTitle2>Languages, Frameworks,</SkillsTitle2> and{" "}
-            <SkillsTitle2>Libraries</SkillsTitle2>
-          </SkillsTitle>
-          <SkillList>
-            <SkillListItem>
+          </p>
+        </div>
+        <div>
+          <span>
+            My Current <span>Languages, Frameworks,</span> and{" "}
+            <span>Libraries</span>
+          </span>
+          <ul>
+            <li>
               <i class="fab fa-html5"></i>
               <div>
-                <SkillDescription>HTML5</SkillDescription>
+                <h3>HTML5</h3>
               </div>
-            </SkillListItem>
-            <SkillListItem>
+            </li>
+            <li>
               <i class="fab fa-css3-alt"></i>
               <div>
-                <SkillDescription>CSS3</SkillDescription>
+                <h3>CSS3</h3>
               </div>
-            </SkillListItem>
-            <SkillListItem>
+            </li>
+            <li>
               <i class="fab fa-js"></i>
               <div>
-                <SkillDescription>JavaScript</SkillDescription>
+                <h3>JavaScript</h3>
               </div>
-            </SkillListItem>
-            <SkillListItem>
+            </li>
+            <li>
               <i class="fab fa-react"></i>
               <div>
-                <SkillDescription>React</SkillDescription>
+                <h3>React</h3>
               </div>
-            </SkillListItem>
-            <SkillListItem>
+            </li>
+            <li>
               <i class="fab fa-node"></i>
               <div>
-                <SkillDescription>NodeJS</SkillDescription>
+                <h3>NodeJS</h3>
               </div>
-            </SkillListItem>
-            <SkillListItemImage>
+            </li>
+            <li>
               <img
                 src="https://i.imgur.com/cR1JtfH.jpg"
                 title="source: imgur.com"
@@ -146,28 +146,28 @@ const About = () => {
                 height="50"
               />
               <div>
-                <SkillDescription>MongoDB</SkillDescription>
-              </div>
-            </SkillListItemImage>
-            <li>
-              <SkillListItemCustom>Express</SkillListItemCustom>
-              <div>
-                <SkillDescription>Express</SkillDescription>
+                <h3>MongoDB</h3>
               </div>
             </li>
-            <SkillListItem>
+            <li>
+              <li>Express</li>
+              <div>
+                <h3>Express</h3>
+              </div>
+            </li>
+            <li>
               <i class="fab fa-python"></i>
               <div>
-                <SkillDescription>Python</SkillDescription>
-              </div>
-            </SkillListItem>
-            <li>
-              <SkillListItemCustom2>Django</SkillListItemCustom2>
-              <div>
-                <SkillDescription>Django</SkillDescription>
+                <h3>Python</h3>
               </div>
             </li>
-            <SkillListItem>
+            <li>
+              <li>Django</li>
+              <div>
+                <h3>Django</h3>
+              </div>
+            </li>
+            <li>
               <img
                 className="postgresql-logo"
                 src="https://i.imgur.com/VjFXXFu.jpg"
@@ -176,12 +176,12 @@ const About = () => {
                 height="50"
               />
               <div>
-                <SkillDescription>PostgreSQL</SkillDescription>
+                <h3>PostgreSQL</h3>
               </div>
-            </SkillListItem>
-          </SkillList>
-        </Skills>
-      </AboutSummaryWrapper>
+            </li>
+          </ul>
+        </div>
+      </div>
     </Layout>
   );
 };

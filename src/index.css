@@ -28,6 +28,13 @@
   font-size: 30rem;
   color: #468499;
 }
+
+@media (max-width: 500px) {
+  .fa-code {
+    font-size: 15rem;
+  }
+}
+
 .fa-html5 {
   color: #15aabf;
   font-size: 50px;

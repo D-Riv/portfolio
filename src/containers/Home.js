@@ -17,11 +17,19 @@ const HomeContainer = styled.div`
 `;
 const TitleContainer = styled.p`
   font-size: 50px;
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 const ButtonContainer = styled.div`
   position: sticky;
   top: 35rem;
   margin-left: 7rem;
+
+  @media (max-width: 500px) {
+    display: flex;
+  }
 `;
 const ButtonStyle = styled.button`
   font-size: 20px;
@@ -37,11 +45,19 @@ const ButtonStyle = styled.button`
   :focus {
     outline: none;
   }
+
+  @media (max-width: 500px) {
+    font-size: 10px;
+  }
 `;
 const BackgroundImage = styled.div`
   position: absolute;
   top: 10rem;
   right: 10rem;
+
+  @media (max-width: 500px) {
+    right: 1.5rem;
+  }
 `;
 
 const Home = () => {
