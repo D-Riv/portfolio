@@ -1,8 +1,18 @@
 $font-stack: "Roboto", sans-serif;
 $primary-color: #575757;
 
+@mixin transparentBackgroundColor($alpha, $color) {
+  background-color: rgba(red($color), green($color), blue($color), $alpha);
+}
+
 .intro-container {
   font-family: $font-stack;
+  box-shadow: 4px 4px 4px #dddddd;
+  width: 35%;
+  position: relative;
+  top: 30vh;
+  left: 5vw;
+  @include transparentBackgroundColor(0.5, #ffffff);
 
   .name {
     font-size: 3rem;
@@ -13,12 +23,12 @@ $primary-color: #575757;
 
   .job-title {
     font-size: 1.5rem;
-    color: #333333;
+    color: $primary-color;
   }
 
   .description {
-    font-size: 1.5rem;
-    color: $primary-color;
+    font-size: 1rem;
+    color: #333333;
   }
 
   .icon-links {
@@ -28,6 +38,19 @@ $primary-color: #575757;
       font-size: 2.5rem;
       list-style: none;
       margin: 1rem 1.2rem;
+      display: flex;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .icon-name {
+        font-size: 1rem;
+        color: #333333;
+      }
     }
   }
 }
