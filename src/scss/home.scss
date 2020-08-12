@@ -54,3 +54,42 @@ $primary-color: #575757;
     }
   }
 }
+
+.about-wrapper {
+  font-family: $font-stack;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+
+  .about-container {
+    @include transparentBackgroundColor(0.5, #ffffff);
+    padding: 5rem 1rem;
+    width: 50%;
+    box-shadow: -1px 4px 4px #dddddd;
+
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+
+    .image-container {
+      // text-align: center;
+      img {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 22rem;
+        border: 1px solid #000000;
+      }
+    }
+
+    .about-me {
+      margin: 1rem 0;
+    }
+
+    .about-description {
+      margin: 0 0 3rem 0;
+    }
+  }
+}
