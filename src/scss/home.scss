@@ -86,10 +86,21 @@ $primary-color: #575757;
 
     .about-me {
       margin: 1rem 0;
+      color: #333333;
     }
 
     .about-description {
       margin: 0 0 3rem 0;
+      color: $primary-color;
+    }
+
+    p {
+      margin: 0.2rem 0;
+      color: $primary-color;
+    }
+    span {
+      color: #000000;
+      font-weight: bold;
     }
   }
 }
