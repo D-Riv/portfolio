@@ -12,7 +12,7 @@ $primary-color: #575757;
   position: relative;
   top: 30vh;
   left: 5vw;
-  @include transparentBackgroundColor(0.5, #ffffff);
+  @include transparentBackgroundColor(0.7, #ffffff);
 
   .name {
     font-size: 3rem;
@@ -62,7 +62,7 @@ $primary-color: #575757;
   height: 100%;
 
   .about-container {
-    @include transparentBackgroundColor(0.5, #ffffff);
+    @include transparentBackgroundColor(0.7, #ffffff);
     padding: 1rem 1rem 5rem 1rem;
     margin-top: 5rem;
     width: 50%;
@@ -75,22 +75,35 @@ $primary-color: #575757;
     right: 0;
     top: 0;
 
-    .about-bio {
-      // display: flex;
+    .about-main {
+      display: flex;
       // align-items: flex-end;
+
+      .about-bio {
+        margin: 0 2rem;
+      }
     }
 
     .image-container {
       // text-align: center;
       img {
         width: 9rem;
-        height: 11rem;
+        height: 11.7rem;
+        // border-bottom: 0.1rem solid #000000;
+        border: 1px solid #468499;
+        border-radius: 1rem;
+        // background-color: #ffffff;
+      }
+
+      p {
+        text-align: center;
       }
     }
 
     .about-me {
       margin: 1rem 0;
-      color: #333333;
+      color: #ffffff;
+      background-color: #468499;
     }
 
     .about-description {
@@ -100,7 +113,7 @@ $primary-color: #575757;
     }
 
     p {
-      margin: 0.2rem 0;
+      margin: 0.7rem 0;
       color: $primary-color;
     }
     span {
