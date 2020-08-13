@@ -1,0 +1,15 @@
+$font-stack: "Roboto", sans-serif;
+$primary-color: #575757;
+
+.portfolio-main-wrapper {
+  font-family: $font-stack;
+  width: 50%;
+  height: 87.5%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5rem;
+  background-color: $primary-color;
+  overflow: scroll;
+  scrollbar-width: thin;
+}
