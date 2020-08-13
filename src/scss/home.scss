@@ -64,9 +64,9 @@ $primary-color: #575757;
   .about-container {
     @include transparentBackgroundColor(0.7, #ffffff);
     padding: 1rem 1rem 5rem 1rem;
-    margin-top: 5rem;
+    margin-top: 7rem;
     width: 50%;
-    height: 75%;
+    height: 60%;
     box-shadow: -1px 4px 4px #dddddd;
     display: flex;
     justify-content: flex-start;
