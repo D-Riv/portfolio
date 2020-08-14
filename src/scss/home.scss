@@ -60,6 +60,7 @@ $primary-color: #575757;
   background-color: red;
   width: 100%;
   height: 100%;
+  display: none;
 
   .about-container {
     @include transparentBackgroundColor(0.7, #ffffff);

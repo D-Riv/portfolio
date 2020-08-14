@@ -1,15 +1,27 @@
 $font-stack: "Roboto", sans-serif;
 $primary-color: #575757;
 
+@mixin transparentBackgroundColor($alpha, $color) {
+  background-color: rgba(red($color), green($color), blue($color), $alpha);
+}
+
 .portfolio-main-wrapper {
   font-family: $font-stack;
-  width: 50%;
+  width: 53.5%;
   height: 87.5%;
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 5rem;
-  background-color: $primary-color;
   overflow: scroll;
   scrollbar-width: thin;
+
+  .project-container {
+    display: flex;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    // padding: 1rem;
+    box-shadow: -1px 4px 4px #dddddd;
+    @include transparentBackgroundColor(0.7, #ffffff);
+  }
 }
