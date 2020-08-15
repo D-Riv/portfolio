@@ -16,27 +16,34 @@ $primary-color: #575757;
   overflow: scroll;
   scrollbar-width: thin;
 
-  .project-container {
-    color: $primary-color;
-    display: flex;
-    margin: 1rem 1rem 1rem 1rem;
-    border-radius: 0.5rem;
-    // padding: 1rem;
-    box-shadow: 4px 4px 4px 4px #dddddd;
-    @include transparentBackgroundColor(0.9, #ffffff);
+  .portfolio-main-container {
+    .project-container {
+      color: $primary-color;
+      display: flex;
+      margin: 1rem 1rem 1rem 1rem;
+      border-radius: 0.5rem;
+      // padding: 1rem;
+      box-shadow: 4px 4px 4px 4px #dddddd;
+      @include transparentBackgroundColor(0.9, #ffffff);
 
-    img {
-      border-radius: 0.5rem 0 0 0.5rem;
-    }
+      img {
+        border-radius: 0.5rem 0 0 0.5rem;
+      }
 
-    .title-container {
-      background-color: #468499;
-      width: 100%;
-      text-align: center;
+      .project-display {
+        margin: 0 0.5rem;
 
-      h1 {
-        font-size: 1.5rem;
-        color: #ffffff;
+        .title-container {
+          background-color: #468499;
+          width: 100%;
+          text-align: start;
+          margin: 0.5rem 0;
+
+          h1 {
+            font-size: 1.5rem;
+            color: #ffffff;
+          }
+        }
       }
     }
   }
