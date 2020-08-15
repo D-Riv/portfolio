@@ -6,7 +6,7 @@ $primary-color: #575757;
 }
 
 .portfolio-main-wrapper {
-  // display: none;
+  display: none;
   font-family: $font-stack;
   width: 58.5%;
   height: 87.5%;
@@ -38,14 +38,15 @@ $primary-color: #575757;
         height: 12rem;
 
         .title-container {
-          background-color: #468499;
-          width: 100%;
           text-align: start;
           margin: 0.5rem 0;
 
           h1 {
             font-size: 1.5rem;
             color: #ffffff;
+            background-color: #468499;
+            display: inline-block;
+
             @media (max-width: 1337px) {
               font-size: 1.2rem;
             }
