@@ -6,8 +6,9 @@ $primary-color: #575757;
 }
 
 .portfolio-main-wrapper {
+  // display: none;
   font-family: $font-stack;
-  width: 53.5%;
+  width: 58.5%;
   height: 87.5%;
   position: absolute;
   top: 0;
@@ -32,6 +33,9 @@ $primary-color: #575757;
 
       .project-display {
         margin: 0 0.5rem;
+        width: 100%;
+        position: relative;
+        height: 12rem;
 
         .title-container {
           background-color: #468499;
@@ -42,6 +46,41 @@ $primary-color: #575757;
           h1 {
             font-size: 1.5rem;
             color: #ffffff;
+            @media (max-width: 1337px) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        .project-description {
+          width: 100%;
+          height: 43%;
+          margin: 0.2rem 0;
+          @media (max-width: 1337px) {
+            font-size: 1rem;
+          }
+        }
+        .project-skills {
+          color: #468499;
+          font-weight: bold;
+          margin: 0.2rem 0;
+          @media (max-width: 1337px) {
+            font-size: 0.9rem;
+          }
+        }
+        .project-buttons {
+          height: 20%;
+          margin: 0.2rem 0;
+          position: absolute;
+          bottom: 0;
+
+          button {
+            color: #ffffff;
+            background-color: #468499;
+            padding: 0.5rem;
+            margin: 0.3rem;
+            border-radius: 1rem;
+            border: none;
           }
         }
       }
