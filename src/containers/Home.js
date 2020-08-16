@@ -1,101 +1,101 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Typical from "react-typical";
+import Resume from "../utils/Dennis_Rivera.pdf";
+import Headshot from "../utils/IMG_3208.png";
+import Portfolio from "../containers/Portfolio";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-// const StyledLayout = {
-//   color: "#ffffff",
-//   backgroundColor: "#272727",
-//   fontFamily: "'Roboto', sans-serif",
-// };
-
-// const HomeContainer = styled.div`
-//   position: sticky;
-//   top: 21rem;
-//   margin-left: 7rem;
-// `;
-// const TitleContainer = styled.p`
-//   font-size: 50px;
-
-//   @media (max-width: 500px) {
-//     font-size: 20px;
-//   }
-// `;
-// const ButtonContainer = styled.div`
-//   position: sticky;
-//   top: 35rem;
-//   margin-left: 7rem;
-
-//   @media (max-width: 500px) {
-//     display: flex;
-//   }
-// `;
-// const ButtonStyle = styled.button`
-//   font-size: 20px;
-//   color: #ffffff;
-//   background-color: #468499;
-//   border: none;
-//   border-radius: 30px;
-//   margin: 10px;
-//   padding: 15px 20px;
-//   cursor: pointer;
-//   transition: transform 0.2s;
-
-//   :focus {
-//     outline: none;
-//   }
-
-//   @media (max-width: 500px) {
-//     font-size: 10px;
-//   }
-// `;
-// const BackgroundImage = styled.div`
-//   position: absolute;
-//   top: 10rem;
-//   right: 10rem;
-
-//   @media (max-width: 500px) {
-//     right: 1.5rem;
-//   }
-// `;
 
 const Home = () => {
   return (
-    <Layout styles={StyledLayout}>
-      <div>
+    <Layout>
+      <div className="code-image">
         <i class="fas fa-code"></i>
       </div>
-      <div>
+      <div className="intro-container">
         <p>
-          Hi,
-          <br /> Im <span className="name">Dennis Rivera</span> 🤙🏽
-          <br />I am a{" "}
-          <Typical
-            loop={Infinity}
-            wrapper="b"
-            steps={[
-              "Software Developer 💻",
-              1000,
-              "USMC Veteran 🇺🇸",
-              1000,
-              "Husband 💍",
-              1000,
-              "Gymrat 💪🏽",
-              1000,
-            ]}
-          />
+          <span className="name">DENNIS RIVERA</span>
+          <br />
+          <span className="job-title">Software Engineer</span>
+          <br />
+          <br />
+          <span className="description">
+            I love to build things with clean, efficient, and scalable code.
+          </span>
         </p>
+        <div>
+          <ul className="icon-links">
+            <li className="icon">
+              <a href="https://github.com/D-Riv" target="_blank">
+                <i class="fab fa-github-square"></i>
+                <span className="icon-name">Github</span>
+              </a>
+            </li>
+            <li className="icon">
+              <a
+                href="https://www.linkedin.com/in/dennis-rivera/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+                <span className="icon-name">LinkedIn</span>
+              </a>
+            </li>
+            <li className="icon">
+              <a a href="mailto: rivd19@outlook.com">
+                <i class="fas fa-envelope-square"></i>
+                <span className="icon-name">Email</span>
+              </a>
+            </li>
+            <li className="icon">
+              <a href={Resume} target="_blank">
+                <i class="fas fa-file"></i>
+                <span className="icon-name">Resume</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <Link to="/about">
-          <button>Get to Know Me</button>
-        </Link>
+      <div className="about-wrapper">
+        <div className="about-container">
+          <div className="about-main">
+            <div className="image-container">
+              <img src={Headshot} alt="Headshot photo of Dennis Rivera" />
+              <p>USMC Veteran</p>
+            </div>
+            <div className="about-bio">
+              <h1 className="about-me">About Me</h1>
 
-        <Link to="/portfolio">
-          <button>Check Out My Work</button>
-        </Link>
+              <p className="about-description">
+                I am a passionate, purpose-driven Software Engineer with a
+                military background in Logistics and Embarkation. My
+                professional experience allows me to tackle different problems
+                strategically and with an analytical mindset. I thrive in a
+                collaborative enviornment with like-minded individuals who want
+                to continuously learn and grow there skillset.
+                <br />
+                <br /> When I'm not coding I love to workout, go on hikes with
+                my wife, or take my dogs out on a crazy adventure.
+              </p>
+              <h1 className="about-me">Skills</h1>
+              <p>
+                <span>Languages:</span> HTML5, CSS3/Sass, JavaScript, Python,
+                Java
+              </p>
+              <p>
+                <span>Frameworks/Libraries:</span> Bootstrap, React, Node.js,
+                Express
+              </p>
+              <p>
+                <span>Databases:</span> MongoDB, PostgreSQL
+              </p>
+              <p>
+                <span>Other Skills:</span> Rest API, Git, Github, Agile, Heroku,
+                Netlify
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <Portfolio />
     </Layout>
   );
 };
