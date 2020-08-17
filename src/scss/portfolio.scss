@@ -6,13 +6,14 @@ $primary-color: #575757;
 }
 
 .portfolio-main-wrapper {
-  display: none;
+  // display: none;
   font-family: $font-stack;
   width: 58.5%;
   height: 87.5%;
   position: absolute;
   top: 0;
-  right: 0;
+  // right: 0;
+
   margin-top: 5rem;
   overflow: scroll;
   scrollbar-width: thin;

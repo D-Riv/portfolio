@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [trasition, setTransition] = useState(1);
+
+  const transitionEffect = () => {};
+
   return (
     <nav className="nav-container">
       <h1 className="nav-title">
@@ -15,8 +19,12 @@ const Navbar = () => {
         <span></span>
       </a>
       <ul className="nav-links">
-        <li className="nav nav-about">ABOUT</li>
-        <li className="nav nav-portfolio">PORTFOLIO</li>
+        <li className="nav nav-about" onClick={transitionEffect}>
+          ABOUT
+        </li>
+        <li className="nav nav-portfolio" onClick={transitionEffect}>
+          PORTFOLIO
+        </li>
       </ul>
     </nav>
   );

@@ -3,17 +3,10 @@ import React, { useState } from "react";
 import "../scss/portfolio.scss";
 
 const Portfolio = () => {
-  const [display, runAnimation] = useState("none");
-
-  // const runAnimation = () => {
-  //   if (display == "none") {
-  //   }
-  // };
-
   return (
     <div
       className="portfolio-main-wrapper"
-      style={{ display: { runAnimation } }}
+      // style={{ display: { runAnimation } }}
     >
       <div className="portfolio-main-container">
         <div className="project-container">
