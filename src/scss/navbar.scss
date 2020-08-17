@@ -14,6 +14,7 @@ $link-decoration: none;
     font-family: $font-stack;
     color: $primary-color;
     text-decoration: $link-decoration;
+    cursor: pointer;
 
     &-title {
       color: $primary-color;
