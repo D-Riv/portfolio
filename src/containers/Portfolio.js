@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 import "../scss/portfolio.scss";
 
-const Portfolio = () => {
+const Portfolio = (props) => {
   return (
     <div
       className="portfolio-main-wrapper"
-      // style={{ display: { runAnimation } }}
+      style={{ animation: props.animationActive }}
     >
       <div className="portfolio-main-container">
         <div className="project-container">

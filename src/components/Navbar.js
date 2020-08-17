@@ -23,10 +23,10 @@ const Navbar = (props) => {
         <span></span>
       </a>
       <ul className="nav-links">
-        <li className="nav nav-about" onClick={transitionEffect}>
+        <li className="nav nav-about" onClick={props.slideIn}>
           ABOUT
         </li>
-        <li className="nav nav-portfolio" onClick={transitionEffect}>
+        <li className="nav nav-portfolio" onClick={props.slideIn}>
           PORTFOLIO
         </li>
       </ul>

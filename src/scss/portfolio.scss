@@ -8,26 +8,20 @@ $primary-color: #575757;
 .portfolio-main-wrapper {
   // display: none;
   font-family: $font-stack;
-  overflow: hidden;
-  width: 58.5%;
-  height: 97.5%;
   position: absolute;
+  width: 58.5%;
+  height: 90%;
   top: 0;
-  right: 0;
+  // right: 0;
+  scrollbar-width: thin;
   overflow: scroll;
+  margin-top: 5.5rem;
+
+  right: -100rem;
 
   // animation: slideIn 2s forwards;
 
   .portfolio-main-container {
-    width: 100%;
-    position: relative;
-
-    height: 100%;
-
-    // right: -100rem;
-
-    margin-top: 5rem;
-    scrollbar-width: thin;
     .project-container {
       color: $primary-color;
       display: flex;

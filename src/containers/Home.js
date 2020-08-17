@@ -8,9 +8,21 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [animation, setTransition] = useState("none");
+  const [animationTwo, setTransitionTwo] = useState("none");
+
+  const slideInAnimation = () => {
+    // setTransition("slideIn 2s forwards");
+    if (animation == "none") {
+      setTransitionTwo("slideOut 2s forwards");
+      // setTransition("slideIn 2s forwards");
+    } else if (animation == "slideIn 2s forwards" && animationTwo == "none") {
+      // setTransition()
+      setTransitionTwo("slideOut 2s forwards");
+    }
+  };
 
   return (
-    <Layout changeStyle={setTransition} animation={animation}>
+    <Layout slideIn={slideInAnimation}>
       <div className="code-image">
         <i class="fas fa-code"></i>
       </div>
@@ -98,7 +110,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Portfolio />
+      <Portfolio animationActive={animation} />
     </Layout>
   );
 };
