@@ -131,3 +131,11 @@ $primary-color: #575757;
     right: -100rem;
   }
 }
+@keyframes slideBackIn {
+  0% {
+    right: -100rem;
+  }
+  100% {
+    right: 0;
+  }
+}

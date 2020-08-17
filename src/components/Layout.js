@@ -10,9 +10,10 @@ const Layout = (props) => {
     <div className="layout-container">
       <div className="layout-content" style={props.styles}>
         <Navbar
-          changeStyle={props.changeStyle}
-          animation={props.animation}
           slideIn={props.slideIn}
+          active={props.active}
+          activeTwo={props.activeTwo}
+          slideAboutOut={props.slideAboutOut}
         />
         {props.children}
       </div>

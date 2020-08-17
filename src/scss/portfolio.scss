@@ -101,3 +101,12 @@ $primary-color: #575757;
     transform: translateX(-100rem);
   }
 }
+
+@keyframes slideBackOut {
+  0% {
+    transform: translateX(-100rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

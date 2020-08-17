@@ -9,20 +9,48 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const [animation, setTransition] = useState("none");
   const [animationTwo, setTransitionTwo] = useState("none");
+  const [aboutActive, setActive] = useState("active");
+  const [portfolioActive, setPortfolioActive] = useState("not-active");
 
   const slideInAnimation = () => {
-    // setTransition("slideIn 2s forwards");
-    if (animation == "none") {
+    if (portfolioActive == "not-active") {
       setTransitionTwo("slideOut 2s forwards");
-      // setTransition("slideIn 2s forwards");
-    } else if (animation == "slideIn 2s forwards" && animationTwo == "none") {
-      // setTransition()
-      setTransitionTwo("slideOut 2s forwards");
+      setTransition("slideIn 2s forwards");
+      setActive("not-active");
+      setPortfolioActive("active");
+    }
+    // if (animation == "none") {
+    //   setTransitionTwo("slideOut 2s forwards");
+    //   setTransition("slideIn 2s forwards");
+    // } else if (
+    //   animation == "slideIn 2s forwards" &&
+    //   animationTwo == "slideOut 2s forwards"
+    // ) {
+    //   setTransition("slideBackOut 2s forwards");
+
+    //   setTransitionTwo("slideBackIn 2s forwards");
+    // } else {
+    //   setTransitionTwo("slideOut 2s forwards");
+    //   setTransition("slideIn 2s forwards");
+    // }
+  };
+
+  const slideAboutOut = () => {
+    if (aboutActive == "not-active") {
+      setTransition("slideBackOut 2s forwards");
+      setTransitionTwo("slideBackIn 2s forwards");
+      setPortfolioActive("not-active");
+      setActive("active");
     }
   };
 
   return (
-    <Layout slideIn={slideInAnimation}>
+    <Layout
+      slideIn={slideInAnimation}
+      active={aboutActive}
+      activeTwo={portfolioActive}
+      slideAboutOut={slideAboutOut}
+    >
       <div className="code-image">
         <i class="fas fa-code"></i>
       </div>
@@ -69,8 +97,8 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="about-wrapper" style={{ animation: animation }}>
-        <div className="about-container">
+      <div className="about-wrapper">
+        <div className="about-container" style={{ animation: animationTwo }}>
           <div className="about-main">
             <div className="image-container">
               <img src={Headshot} alt="Headshot photo of Dennis Rivera" />

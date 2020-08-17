@@ -2,14 +2,6 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
-  const transitionEffect = () => {
-    if (props.animation == "none") {
-      props.changeStyle("slideIn 2s forwards");
-    } else {
-      let car = props.animation;
-    }
-  };
-
   return (
     <nav className="nav-container">
       <h1 className="nav-title">
@@ -23,10 +15,18 @@ const Navbar = (props) => {
         <span></span>
       </a>
       <ul className="nav-links">
-        <li className="nav nav-about" onClick={props.slideIn}>
+        <li
+          className="nav nav-about"
+          onClick={props.slideAboutOut}
+          id={props.active}
+        >
           ABOUT
         </li>
-        <li className="nav nav-portfolio" onClick={props.slideIn}>
+        <li
+          className="nav nav-portfolio"
+          onClick={props.slideIn}
+          id={props.activeTwo}
+        >
           PORTFOLIO
         </li>
       </ul>
