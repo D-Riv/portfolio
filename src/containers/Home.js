@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import Layout from "../components/Layout";
 import Resume from "../utils/Dennis_Rivera.pdf";
 import Headshot from "../utils/IMG_3208.png";
@@ -6,8 +7,10 @@ import Portfolio from "../containers/Portfolio";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [animation, setTransition] = useState("none");
+
   return (
-    <Layout>
+    <Layout changeStyle={setTransition} animation={animation}>
       <div className="code-image">
         <i class="fas fa-code"></i>
       </div>
@@ -54,7 +57,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="about-wrapper">
+      <div className="about-wrapper" style={{ animation: animation }}>
         <div className="about-container">
           <div className="about-main">
             <div className="image-container">

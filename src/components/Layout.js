@@ -9,7 +9,7 @@ const Layout = (props) => {
   return (
     <div className="layout-container">
       <div className="layout-content" style={props.styles}>
-        <Navbar clicked={props.clicked} />
+        <Navbar changeStyle={props.changeStyle} animation={props.animation} />
         {props.children}
       </div>
       <Footer />

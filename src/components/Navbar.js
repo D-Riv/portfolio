@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const Navbar = () => {
-  const [trasition, setTransition] = useState(1);
-
-  const transitionEffect = () => {};
+const Navbar = (props) => {
+  const transitionEffect = () => {
+    if (props.animation == "none") {
+      props.changeStyle("slideIn 2s forwards");
+    } else {
+      let car = props.animation;
+    }
+  };
 
   return (
     <nav className="nav-container">
