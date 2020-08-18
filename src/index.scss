@@ -11,21 +11,24 @@ $shrink-view: 1025px;
 .fa-github-square {
   color: #000000;
   display: flex;
+  text-rendering: optimizeLegibility;
 }
 .fa-linkedin {
   color: #0077b5;
+  text-rendering: optimizeLegibility;
 }
 .fa-instagram-square {
   color: #bc2a8d;
+  text-rendering: optimizeLegibility;
 }
-.fa-facebook-square {
-  color: #3b5998;
-}
+
 .fa-envelope-square {
   color: #575757;
+  text-rendering: optimizeLegibility;
 }
 .fa-file {
   color: #333333;
+  text-rendering: optimizeLegibility;
   // background-color: #dddddd;
   // font-size: 2.2rem;
 }
@@ -42,6 +45,7 @@ $shrink-view: 1025px;
     left: 0;
     right: 0;
     margin: auto;
+    text-rendering: optimizeLegibility;
 
     @media (max-width: $change-view) {
       display: flex;
