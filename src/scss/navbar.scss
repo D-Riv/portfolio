@@ -29,10 +29,6 @@ $shrink-view: 1025px;
     &-title {
       color: $primary-color;
     }
-
-    // @media (max-width: $change-view) {
-    //   font-size: 0.9rem;
-    // }
   }
 
   .nav-links {
@@ -53,6 +49,10 @@ $shrink-view: 1025px;
       list-style: none;
       margin: 0 7rem;
       padding: 0.5rem;
+
+      @media (max-width: $break-medium) {
+        margin: 0 3.5rem;
+      }
     }
   }
 }

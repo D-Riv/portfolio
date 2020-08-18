@@ -15,7 +15,7 @@ const Layout = (props) => {
           activeTwo={props.activeTwo}
           slideAboutOut={props.slideAboutOut}
         />
-        {props.children}
+        <div className="children-container">{props.children}</div>
       </div>
       <Footer />
     </div>

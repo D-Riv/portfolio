@@ -19,9 +19,8 @@ $shrink-view: 1025px;
   @include transparentBackgroundColor(0.7, #ffffff);
 
   @media (max-width: $change-view) {
-    position: relative;
-    top: 2.5rem;
-    left: 35vw;
+    position: static;
+    margin-top: 2.5rem;
     width: 40%;
   }
   @media (max-width: $break-medium) {
