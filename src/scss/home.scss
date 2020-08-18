@@ -4,6 +4,7 @@ $break-small: 500px;
 $break-medium: 768px;
 $change-view: 900px;
 $shrink-view: 1025px;
+$adjust-height: 750px;
 
 @mixin transparentBackgroundColor($alpha, $color) {
   background-color: rgba(red($color), green($color), blue($color), $alpha);
@@ -129,6 +130,9 @@ $shrink-view: 1025px;
       right: 0;
       top: 15rem;
       width: 100%;
+    }
+    @media (max-height: $adjust-height) {
+      height: 35%;
     }
     @media (max-width: $break-small) {
       padding: 0;
