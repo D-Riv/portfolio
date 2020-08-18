@@ -20,4 +20,8 @@
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   color: #575757;
+
+  @media (max-width: $shrink-view) {
+    font-size: 0.7rem;
+  }
 }

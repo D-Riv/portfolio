@@ -1,5 +1,9 @@
 $font-stack: "Roboto", sans-serif;
 $primary-color: #575757;
+$break-small: 500px;
+$break-medium: 768px;
+$change-view: 900px;
+$shrink-view: 1025px;
 
 @mixin transparentBackgroundColor($alpha, $color) {
   background-color: rgba(red($color), green($color), blue($color), $alpha);
@@ -51,8 +55,8 @@ $primary-color: #575757;
             background-color: #468499;
             display: inline-block;
 
-            @media (max-width: 1337px) {
-              font-size: 1.2rem;
+            @media (max-width: $shrink-view) {
+              font-size: 1rem;
             }
           }
         }
@@ -61,16 +65,18 @@ $primary-color: #575757;
           width: 100%;
           height: 43%;
           margin: 0.2rem 0;
-          @media (max-width: 1337px) {
-            font-size: 1rem;
+
+          @media (max-width: $shrink-view) {
+            font-size: 0.7rem;
           }
         }
         .project-skills {
           color: #468499;
           font-weight: bold;
           margin: 0.2rem 0;
-          @media (max-width: 1337px) {
-            font-size: 0.9rem;
+
+          @media (max-width: $shrink-view) {
+            font-size: 0.7rem;
           }
         }
         .project-buttons {
@@ -91,6 +97,10 @@ $primary-color: #575757;
 
             &:hover {
               transform: scale(1.2);
+            }
+
+            @media (max-width: $shrink-view) {
+              font-size: 0.5rem;
             }
           }
         }
