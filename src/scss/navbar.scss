@@ -15,6 +15,12 @@ $link-decoration: none;
     color: $primary-color;
     text-decoration: $link-decoration;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.25);
+      color: #468499;
+    }
 
     &-title {
       color: $primary-color;

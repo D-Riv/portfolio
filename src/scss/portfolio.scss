@@ -86,6 +86,12 @@ $primary-color: #575757;
             margin: 0.3rem;
             border-radius: 1rem;
             border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.2);
+            }
           }
         }
       }

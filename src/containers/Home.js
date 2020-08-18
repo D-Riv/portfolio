@@ -69,7 +69,7 @@ const Home = () => {
           <ul className="icon-links">
             <li className="icon">
               <a href="https://github.com/D-Riv" target="_blank">
-                <i class="fab fa-github-square"></i>
+                <i class="fab fa-github-square scaled"></i>
                 <span className="icon-name">Github</span>
               </a>
             </li>
@@ -78,19 +78,19 @@ const Home = () => {
                 href="https://www.linkedin.com/in/dennis-rivera/"
                 target="_blank"
               >
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin scaled"></i>
                 <span className="icon-name">LinkedIn</span>
               </a>
             </li>
             <li className="icon">
               <a a href="mailto: rivd19@outlook.com">
-                <i class="fas fa-envelope-square"></i>
+                <i class="fas fa-envelope-square scaled"></i>
                 <span className="icon-name">Email</span>
               </a>
             </li>
             <li className="icon">
               <a href={Resume} target="_blank">
-                <i class="fas fa-file"></i>
+                <i class="fas fa-file scaled"></i>
                 <span className="icon-name">Resume</span>
               </a>
             </li>
@@ -111,8 +111,8 @@ const Home = () => {
                 I am a passionate, purpose-driven Software Engineer with a
                 military background in Logistics and Embarkation. My
                 professional experience allows me to tackle different problems
-                strategically and with an analytical mindset. I thrive in a
-                collaborative enviornment with like-minded individuals who want
+                strategically and with an analytical mindset. I thrive in
+                collaborative environments with like-minded individuals who want
                 to continuously learn and grow there skillset.
                 <br />
                 <br /> When I'm not coding I love to workout, go on hikes with
