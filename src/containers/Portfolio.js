@@ -32,7 +32,7 @@ const Portfolio = (props) => {
             <p className="project-buttons">
               <a href="https://tv-movie-library.netlify.app/" target="_blank">
                 <button>
-                  <i class="fas fa-link"></i> VISIT
+                  <i className="fas fa-link"></i> VISIT
                 </button>
               </a>
               <a
@@ -40,7 +40,7 @@ const Portfolio = (props) => {
                 target="_blank"
               >
                 <button>
-                  <i class="fab fa-github"></i> SOURCE
+                  <i className="fab fa-github"></i> SOURCE
                 </button>
               </a>
             </p>
@@ -67,7 +67,7 @@ const Portfolio = (props) => {
             <p className="project-buttons">
               <a href="https://ui-pattern-project.netlify.com/" target="_blank">
                 <button>
-                  <i class="fas fa-link"></i> VISIT
+                  <i className="fas fa-link"></i> VISIT
                 </button>
               </a>
               <a
@@ -75,7 +75,7 @@ const Portfolio = (props) => {
                 target="_blank"
               >
                 <button>
-                  <i class="fab fa-github"></i> SOURCE
+                  <i className="fab fa-github"></i> SOURCE
                 </button>
               </a>
             </p>
@@ -102,7 +102,7 @@ const Portfolio = (props) => {
             <p className="project-buttons">
               <a href="https://project-4-hangman.netlify.com/" target="_blank">
                 <button>
-                  <i class="fas fa-link"></i> VISIT
+                  <i className="fas fa-link"></i> VISIT
                 </button>
               </a>
               <a
@@ -110,7 +110,7 @@ const Portfolio = (props) => {
                 target="_blank"
               >
                 <button>
-                  <i class="fab fa-github"></i> SOURCE
+                  <i className="fab fa-github"></i> SOURCE
                 </button>
               </a>
             </p>
@@ -137,12 +137,12 @@ const Portfolio = (props) => {
             <p className="project-buttons">
               <a href="https://tv-movie-api.herokuapp.com/" target="_blank">
                 <button>
-                  <i class="fas fa-link"></i> VISIT
+                  <i className="fas fa-link"></i> VISIT
                 </button>
               </a>
               <a href="https://github.com/D-Riv/tv-movie-api" target="_blank">
                 <button>
-                  <i class="fab fa-github"></i> SOURCE
+                  <i className="fab fa-github"></i> SOURCE
                 </button>
               </a>
             </p>
@@ -171,7 +171,7 @@ const Portfolio = (props) => {
                 target="_blank"
               >
                 <button>
-                  <i class="fas fa-link"></i> VISIT
+                  <i className="fas fa-link"></i> VISIT
                 </button>
               </a>
               <a
@@ -179,7 +179,7 @@ const Portfolio = (props) => {
                 target="_blank"
               >
                 <button>
-                  <i class="fab fa-github"></i> SOURCE
+                  <i className="fab fa-github"></i> SOURCE
                 </button>
               </a>
             </p>

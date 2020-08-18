@@ -52,7 +52,7 @@ const Home = () => {
       slideAboutOut={slideAboutOut}
     >
       <div className="code-image">
-        <i class="fas fa-code"></i>
+        <i className="fas fa-code"></i>
       </div>
       <div className="intro-container">
         <p>
@@ -69,7 +69,7 @@ const Home = () => {
           <ul className="icon-links">
             <li className="icon">
               <a href="https://github.com/D-Riv" target="_blank">
-                <i class="fab fa-github-square scaled"></i>
+                <i className="fab fa-github-square scaled"></i>
                 <span className="icon-name">Github</span>
               </a>
             </li>
@@ -78,19 +78,19 @@ const Home = () => {
                 href="https://www.linkedin.com/in/dennis-rivera/"
                 target="_blank"
               >
-                <i class="fab fa-linkedin scaled"></i>
+                <i className="fab fa-linkedin scaled"></i>
                 <span className="icon-name">LinkedIn</span>
               </a>
             </li>
             <li className="icon">
               <a a href="mailto: rivd19@outlook.com">
-                <i class="fas fa-envelope-square scaled"></i>
+                <i className="fas fa-envelope-square scaled"></i>
                 <span className="icon-name">Email</span>
               </a>
             </li>
             <li className="icon">
               <a href={Resume} target="_blank">
-                <i class="fas fa-file scaled"></i>
+                <i className="fas fa-file scaled"></i>
                 <span className="icon-name">Resume</span>
               </a>
             </li>

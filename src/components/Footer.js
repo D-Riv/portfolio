@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div className="footer-wrapper">
         <h3 className="footer">
-          Copyright <i class="far fa-copyright"></i> 2020, Dennis
+          Copyright <i className="far fa-copyright"></i> 2020, Dennis
         </h3>
       </div>
     </div>
