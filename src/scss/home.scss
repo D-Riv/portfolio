@@ -18,6 +18,19 @@ $shrink-view: 1025px;
   left: 5vw;
   @include transparentBackgroundColor(0.7, #ffffff);
 
+  @media (max-width: $change-view) {
+    position: relative;
+    top: 2.5rem;
+    left: 35vw;
+    width: 40%;
+  }
+  @media (max-width: $break-medium) {
+    width: 47%;
+  }
+  @media (max-width: $break-small) {
+    width: 60%;
+  }
+
   .name {
     font-size: 3rem;
     color: #333333;
@@ -44,6 +57,9 @@ $shrink-view: 1025px;
     @media (max-width: $shrink-view) {
       font-size: 0.8rem;
     }
+    @media (max-width: $break-medium) {
+      width: 100%;
+    }
   }
 
   .icon-links {
@@ -55,8 +71,8 @@ $shrink-view: 1025px;
       margin: 1rem 1.2rem;
       display: flex;
 
-      @media (max-width: $shrink-view) {
-        font-size: 1.5rem;
+      @media (max-width: $break-medium) {
+        margin: 1rem 0.7rem;
       }
 
       a {
@@ -107,6 +123,13 @@ $shrink-view: 1025px;
     position: absolute;
     right: 0;
     top: 0;
+
+    @media (max-width: $change-view) {
+      position: absolute;
+      right: 0;
+      top: 15rem;
+      width: 100%;
+    }
     // animation: slideOut 2s forwards;
 
     .about-main {
@@ -119,6 +142,9 @@ $shrink-view: 1025px;
     }
 
     .image-container {
+      @media (max-width: $shrink-view) {
+        margin-left: 3rem;
+      }
       // text-align: center;
       img {
         width: 9rem;

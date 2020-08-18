@@ -20,8 +20,13 @@ $shrink-view: 1025px;
   scrollbar-width: thin;
   overflow: scroll;
   margin-top: 5.5rem;
-
   right: -100rem;
+
+  @media (max-width: $change-view) {
+    height: 60%;
+    width: 100%;
+    top: 15rem;
+  }
 
   // animation: slideIn 2s forwards;
 

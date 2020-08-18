@@ -1,6 +1,10 @@
 $font-stack: "Roboto", sans-serif;
 $primary-color: #575757;
 $link-decoration: none;
+$break-small: 500px;
+$break-medium: 768px;
+$change-view: 900px;
+$shrink-view: 1025px;
 
 .nav-container {
   display: flex;
@@ -25,6 +29,10 @@ $link-decoration: none;
     &-title {
       color: $primary-color;
     }
+
+    // @media (max-width: $change-view) {
+    //   font-size: 0.9rem;
+    // }
   }
 
   .nav-links {
