@@ -24,8 +24,7 @@ const Portfolio = (props) => {
             </div>
             <p className="project-description">
               A full stack application that stores a public library of movies
-              and tv shows that allows the user to search, edit, add, and delete
-              data.
+              and tv shows.
             </p>
             <div className="project-skills">
               HTML | CSS | JavaScript | React | Styled Components | BootStrap
@@ -131,8 +130,8 @@ const Portfolio = (props) => {
               <h1>Tv-Movie API</h1>
             </div>
             <p className="project-description">
-              REST API containing data on movies and tv shows. The API contains
-              complete CRUD functionality implemented with RESTful routes.
+              REST API containing tv and movie data with complete CRUD
+              functionality implemented with RESTful routes.
             </p>
             <div className="project-skills">Node.JS | MongoDB | Express</div>
             <p className="project-buttons">
@@ -163,8 +162,7 @@ const Portfolio = (props) => {
               <h1>Mockup</h1>
             </div>
             <p className="project-description">
-              A static web page utilized to demonstrate my ability to structure
-              and design a web page based on a mock up design provided to me.
+              Static web page structured and designed on a mock up design.
             </p>
             <div className="project-skills">HTML | CSS </div>
             <p className="project-buttons">

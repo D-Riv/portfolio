@@ -34,6 +34,12 @@ $shrink-view: 1025px;
   .nav-links {
     display: flex;
 
+    .nav-link {
+      @media (max-width: $break-medium) {
+        font-size: 0.7rem;
+      }
+    }
+
     #active {
       color: #468499;
       font-weight: bold;
@@ -52,6 +58,9 @@ $shrink-view: 1025px;
 
       @media (max-width: $break-medium) {
         margin: 0 3.5rem;
+      }
+      @media (max-width: $break-medium) {
+        margin: 0 0.5rem;
       }
     }
   }

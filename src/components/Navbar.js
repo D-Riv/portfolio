@@ -16,14 +16,14 @@ const Navbar = (props) => {
       </a>
       <ul className="nav-links">
         <li
-          className="nav nav-about"
+          className="nav nav-link"
           onClick={props.slideAboutOut}
           id={props.active}
         >
           ABOUT
         </li>
         <li
-          className="nav nav-portfolio"
+          className="nav nav-link"
           onClick={props.slideIn}
           id={props.activeTwo}
         >

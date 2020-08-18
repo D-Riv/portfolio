@@ -23,7 +23,7 @@ $shrink-view: 1025px;
   right: -100rem;
 
   @media (max-width: $change-view) {
-    height: 60%;
+    height: 50%;
     width: 100%;
     top: 15rem;
   }
@@ -40,8 +40,17 @@ $shrink-view: 1025px;
       box-shadow: 4px 4px 4px 4px #dddddd;
       @include transparentBackgroundColor(0.9, #ffffff);
 
+      @media (max-width: $shrink-view) {
+        margin: 1rem 0.5rem;
+      }
+
       img {
         border-radius: 0.5rem 0 0 0.5rem;
+
+        @media (max-width: $break-medium) {
+          width: 8rem;
+          height: 9rem;
+        }
       }
 
       .project-display {
@@ -49,10 +58,17 @@ $shrink-view: 1025px;
         width: 100%;
         position: relative;
         height: 12rem;
+        @media (max-width: $break-small) {
+          height: 9rem;
+        }
 
         .title-container {
           text-align: start;
           margin: 0.5rem 0;
+
+          @media (max-width: $break-small) {
+            margin: 0.2rem 0;
+          }
 
           h1 {
             font-size: 1.5rem;
@@ -62,6 +78,9 @@ $shrink-view: 1025px;
 
             @media (max-width: $shrink-view) {
               font-size: 1rem;
+            }
+            @media (max-width: $break-medium) {
+              font-size: 0.875rem;
             }
           }
         }
@@ -74,6 +93,10 @@ $shrink-view: 1025px;
           @media (max-width: $shrink-view) {
             font-size: 0.7rem;
           }
+          @media (max-width: $break-small) {
+            font-size: 0.687rem;
+            height: 38%;
+          }
         }
         .project-skills {
           color: #468499;
@@ -82,6 +105,9 @@ $shrink-view: 1025px;
 
           @media (max-width: $shrink-view) {
             font-size: 0.7rem;
+          }
+          @media (max-width: $break-medium) {
+            font-size: 0.687rem;
           }
         }
         .project-buttons {
@@ -105,7 +131,11 @@ $shrink-view: 1025px;
             }
 
             @media (max-width: $shrink-view) {
-              font-size: 0.5rem;
+              font-size: 0.75rem;
+            }
+            @media (max-width: $break-small) {
+              margin: 0 0.3rem;
+              padding: 0.3rem;
             }
           }
         }

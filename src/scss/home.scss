@@ -27,7 +27,7 @@ $shrink-view: 1025px;
     width: 47%;
   }
   @media (max-width: $break-small) {
-    width: 60%;
+    width: 80%;
   }
 
   .name {
@@ -122,6 +122,7 @@ $shrink-view: 1025px;
     position: absolute;
     right: 0;
     top: 0;
+    overflow: scroll;
 
     @media (max-width: $change-view) {
       position: absolute;
@@ -129,14 +130,33 @@ $shrink-view: 1025px;
       top: 15rem;
       width: 100%;
     }
+    @media (max-width: $break-small) {
+      padding: 0;
+      margin-top: 6rem;
+      margin-right: 0.1rem;
+      height: 50%;
+      width: 99%;
+      box-shadow: -1px -4px 4px #dddddd;
+    }
+
     // animation: slideOut 2s forwards;
 
     .about-main {
       display: flex;
+
+      @media (max-width: $break-small) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+      }
       // align-items: flex-end;
 
       .about-bio {
         margin: 1rem 2rem;
+
+        @media (max-width: $break-small) {
+          margin: 0;
+        }
       }
     }
 
@@ -144,14 +164,21 @@ $shrink-view: 1025px;
       @media (max-width: $shrink-view) {
         margin-left: 3rem;
       }
-      // text-align: center;
+      @media (max-width: $break-small) {
+        text-align: center;
+        margin: 0;
+      }
+
       img {
         width: 9rem;
         height: 11.7rem;
-        // border-bottom: 0.1rem solid #000000;
         border: 1px solid #468499;
         border-radius: 1rem;
-        // background-color: #ffffff;
+
+        @media (max-width: $break-small) {
+          width: 7rem;
+          height: 8.7rem;
+        }
       }
 
       p {
@@ -170,6 +197,9 @@ $shrink-view: 1025px;
 
       @media (max-width: $shrink-view) {
         font-size: 1rem;
+      }
+      @media (max-width: $break-small) {
+        margin: 0.5rem 0;
       }
     }
 
