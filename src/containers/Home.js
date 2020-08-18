@@ -109,11 +109,11 @@ const Home = () => {
 
               <p className="about-description">
                 I am a passionate, purpose-driven Software Engineer with a
-                military background in Logistics and Embarkation. My
-                professional experience allows me to tackle different problems
-                strategically and with an analytical mindset. I thrive in
-                collaborative environments with like-minded individuals who want
-                to continuously learn and grow there skillset.
+                military background in Logistics and Embarkation. My unique
+                experience allows me to tackle different problems strategically
+                and with an analytical mindset. I thrive in collaborative
+                environments with like-minded individuals who want to
+                continuously learn and grow there skillset.
                 <br />
                 <br /> When I'm not coding I love to workout, go on hikes with
                 my wife, or take my dogs out on a crazy adventure.
