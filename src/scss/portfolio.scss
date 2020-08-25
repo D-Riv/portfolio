@@ -4,6 +4,8 @@ $break-small: 500px;
 $break-medium: 768px;
 $change-view: 900px;
 $shrink-view: 1025px;
+$adjust-height: 750px;
+$break-small-height: 568px;
 
 @mixin transparentBackgroundColor($alpha, $color) {
   background-color: rgba(red($color), green($color), blue($color), $alpha);
@@ -26,6 +28,16 @@ $shrink-view: 1025px;
     height: 50%;
     width: 100%;
     top: 15rem;
+  }
+
+  @media (max-width: $break-small) {
+    margin-top: 3rem;
+  }
+  @media (max-height: $adjust-height) {
+    height: 55%;
+  }
+  @media (max-height: $break-small-height) {
+    height: 48%;
   }
 
   // animation: slideIn 2s forwards;

@@ -3,8 +3,9 @@ $primary-color: #575757;
 $break-small: 500px;
 $break-medium: 768px;
 $change-view: 900px;
-$shrink-view: 1025px;
+$shrink-view: 1079px;
 $adjust-height: 750px;
+$break-small-height: 568px;
 
 @mixin transparentBackgroundColor($alpha, $color) {
   background-color: rgba(red($color), green($color), blue($color), $alpha);
@@ -29,6 +30,8 @@ $adjust-height: 750px;
   }
   @media (max-width: $break-small) {
     width: 80%;
+    position: static;
+    margin-top: 0.5rem;
   }
 
   .name {
@@ -123,7 +126,6 @@ $adjust-height: 750px;
     position: absolute;
     right: 0;
     top: 0;
-    overflow: scroll;
 
     @media (max-width: $change-view) {
       position: absolute;
@@ -131,16 +133,22 @@ $adjust-height: 750px;
       top: 15rem;
       width: 100%;
     }
-    @media (max-height: $adjust-height) {
-      height: 35%;
-    }
+
     @media (max-width: $break-small) {
       padding: 0;
-      margin-top: 6rem;
+      margin-top: 3rem;
       margin-right: 0.1rem;
-      height: 41%;
+      height: 50%;
       width: 99%;
       box-shadow: -1px -4px 4px #dddddd;
+      overflow: scroll;
+    }
+    @media (max-height: $adjust-height) {
+      height: 55%;
+      overflow: scroll;
+    }
+    @media (max-height: $break-small-height) {
+      height: 48%;
     }
 
     // animation: slideOut 2s forwards;
